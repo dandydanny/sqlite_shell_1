@@ -1,0 +1,15 @@
+SQLite version 3.7.15.1 2012-12-19 20:39:10
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> .schema
+CREATE TABLE students (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(64) NOT NULL,
+    last_name  VARCHAR(64) NOT NULL,
+    gender VARCHAR(64) NOT NULL,
+    birthday VARCHAR(64) NOT NULL,
+    email VARCHAR(128) UNIQUE NOT NULL,
+    phone VARCHAR(64) NOT NULL,
+    created_at DATETIME NOT NULL,
+    updated_at DATETIME NOT NULL
+  );
